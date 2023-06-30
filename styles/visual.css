@@ -1,0 +1,11 @@
+/*-Fonts-link-*/
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&family=Poppins:wght@400;500;600&display=swap');
+/*-Color-variables-*/
+:root {
+    /* using : color: var(--crimson-color); */
+    --crimson-color: rgb(220, 20, 60);
+    --white-color: rgb(255, 255, 255);
+    --gold-color: rgb(218, 172, 0);
+    --banana-color: rgb(252, 195, 2);
+    --turquoise-color: rgb(0, 190, 201);
+}
