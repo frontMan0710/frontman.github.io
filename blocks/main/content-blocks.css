@@ -56,7 +56,6 @@ ul li { list-style: none;}
         height: 69px;
         margin-top: 50px;
     }
-
     .buttons__button:nth-of-type(1) {
         display: inline-flex;
         align-items: center;
@@ -92,4 +91,79 @@ ul li { list-style: none;}
         height: 69px;
         margin-left: 35px;
     }
+
+    /*--------------------------------*/
+
+    .first {
+        width: 100%;
+        height: 780px;
+        background-color: var(--white-color);
+    }
+    .first-content {
+        display: flex;
+        max-width: 1160px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .first-text-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+    }
+    .first-text-wrapper__citate {
+        font-size: 50px;
+        font-family: "Poppins", sans-serif, SemiBold;
+        color: var(--lightblack-color);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .first-text-wrapper__body-text{
+        font-size: 29px;
+        font-family: "Poppins", sans-serif, Regular;
+        color: var(--lightblack-color);
+        line-height: 1.2;
+        text-align: left;
+        margin-top: 50px;
+    }
+    .first-content__dog-image {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+    }
+    .dog-image {
+        z-index: 1;
+        margin-bottom: 30px;
+    }
+    .empty-to-image {
+        background-color: var(--banana-color);
+        position: absolute;
+        right: 666px;
+        top: 1346px;
+        width: 252px;
+        height: 206px;
+        z-index: auto;
+    }
+    .first-button__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 21px;
+        font-family: "Poppins", sans-serif, SemiBold;
+        background-color: var(--banana-color);
+        color: var(--white-color);
+        font-weight: bold;
+        line-height: 1.2;
+
+        border-radius: 7px;
+        width: 182px;
+        height: 69px;
+        margin-top: 50px;
+    }
+
+    /*--------------------------------*/
+    
 }
