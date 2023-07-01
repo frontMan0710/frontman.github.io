@@ -566,4 +566,146 @@ ul li { list-style: none;}
         line-height: 1.2;
         margin-top: 20px;
     }
+
+    /*--------------------------------*/
+
+    .eight {
+        width: 100%;
+        height: 1180px;
+        background-color: var(--white-color);
+    }
+    .eight-content {
+        display: flex;
+        flex-direction: column;
+        max-width: 1160px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .eight-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 35%;
+        padding-top: 32px;
+    }
+    .eight-text-wrapper__eight-title {
+        margin-bottom: 50px;
+        font-size: 14px;
+        font-family: "Poppins", sans-serif, Bold;
+        color: var(--lightblack-color);
+        font-weight: bold;
+        line-height: 1.2;
+        -moz-transform: matrix( 5.3,0,6.4e-16,5.29,0,0);
+        -webkit-transform: matrix( 5.3,0,6.4e-16,5.286,0,0);
+        -ms-transform: matrix( 5.3,0,6.4e-16,5.3,0,0);
+    }
+    .eight-text-wrapper__eight-body-text {
+        width: 640px;
+        margin: 0 auto;
+        font-size: 33.333px;
+        font-family: "Poppins", sans-serif, Regular;
+        color: var(--lightblack-color);
+        line-height: 1.2;
+        text-align: center;
+    }
+    .border-enable-style {
+
+    }
+    .eight-cards {
+        display: flex;
+        justify-content: space-between;
+        height: 65%;
+        text-align: left;
+    }
+    .eight-cards__eight-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: initial; /* или justify-content: unset; */
+        align-items: center;
+        width: 342px;
+        height: 100%;
+    }
+    .text-block {
+        text-align: left;
+        margin-top: 50px;
+    }
+    .text-block__eight-card-title {
+        font-size: 25px;
+        font-family: "Poppins", sans-serif, SemiBold;
+        color: rgb(49, 50, 67);
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    .text-block__calendar {
+        font-size: 16.667px;
+        font-family: "Poppins", sans-serif, Regular;
+        color: rgb(0, 190, 201);
+        line-height: 1.2;
+    }
+
+    .text-block__eight-card-text {
+        font-size: 16.667px;
+        font-family: "Poppins", sans-serif, Regular;
+        color: var(--lightblack-color);
+        line-height: 1.2;
+    }
+
+
+
+    .collapse {
+        margin-top: 30px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .collapse label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        font-size: 21px;
+        font-family: "Poppins", sans-serif, Medium;
+        color: rgb(0, 190, 201);
+        line-height: 1.2;
+    }
+
+    .collapse label:after {
+        content: "+";
+
+    }
+    .col-content {
+        height: 80px;
+        overflow: hidden;
+        max-height: 1px;
+        position: relative;
+        transition: 0.3s;
+    }
+    .col-content p {
+        padding-top: 10px;
+        font-size: 16.667px;
+        font-family: "Poppins", sans-serif, Regular;
+        color: rgb(49, 50, 67);
+        line-height: 1.2;
+        text-align: left;
+
+    }
+
+    .collapse input:checked ~ .col-content {
+        max-height: 100px;
+    }
+
+    .collapse input:checked + label:after {
+        content: "-";
+    }
+    .collapse input:not(:checked) + label:after {
+        content: "+";
+    }
+
+    .collapse input {
+        display: none;
+    }
+
+    .footer {
+        height: 575px;
+        background-color: var(--lightblack-color);
+    }
 }
