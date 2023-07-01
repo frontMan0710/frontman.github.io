@@ -111,7 +111,7 @@ ul li { list-style: none;}
         flex-direction: column;
         width: 50%;
     }
-    .first-text-wrapper__citate {
+    .first-text-wrapper__first-title {
         font-size: 50px;
         font-family: "Poppins", sans-serif, SemiBold;
         color: var(--lightblack-color);
@@ -165,5 +165,16 @@ ul li { list-style: none;}
     }
 
     /*--------------------------------*/
-    
+
+    .second {
+        width: 100%;
+        height: 1017px;
+        background-color: var(--banana-color);
+    }
+    .second-content {
+        display: flex;
+        max-width: 1160px;
+        height: 100%;
+        margin: 0 auto;
+    }
 }
