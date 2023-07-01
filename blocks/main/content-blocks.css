@@ -497,4 +497,59 @@ ul li { list-style: none;}
     .contact-links__link {
         filter: brightness(0);
     }
+
+    /*--------------------------------*/
+
+    .sixth {
+        width: 100%;
+        height: 575px;
+        background-color: var(--banana-color);
+    }
+    .sixth-content {
+        max-width: 1160px;
+        height: 100%;
+        background-image: url("images/bg-image-for-statistic.png");
+        margin: 0 auto;
+    }
+    .sixth-text-wrapper__sixth-title {
+        font-size: 50px;
+        font-family: "Poppins", sans-serif, SemiBold;
+        color: var(--lightblack-color);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .sixth-sections-wrapper {
+        display: flex;
+        height: 100%;
+    }
+    .sixth-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 480px;
+        height: 100%;
+    }
+    .section-wrapper {
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+    .sixth-section__statistic {
+        font-size: 41.667px;
+        font-family: "Poppins", sans-serif, Medium;
+        color: var(--white-color);
+        line-height: 1.2;
+        margin-top: 50px;
+    }
+    .sixth-section__mark {
+        font-size: 37.5px;
+        font-family: "Poppins", sans-serif, Bold;
+        color: var(--white-color);
+        font-weight: bold;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
 }
