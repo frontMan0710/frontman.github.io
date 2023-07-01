@@ -132,20 +132,24 @@ ul li { list-style: none;}
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        position: relative;
         width: 50%;
     }
     .dog-image {
         z-index: 1;
         margin-bottom: 30px;
+        position: absolute;
+        top: 120px;
+        right: 0;
     }
-    .empty-to-image {
+    .empty-to-image1 {
         background-color: var(--banana-color);
         position: absolute;
-        right: 666px;
-        top: 1346px;
         width: 252px;
         height: 206px;
         z-index: auto;
+        right: 50%;
+        top: 55%;
     }
     .first-button__button {
         display: inline-flex;
@@ -256,12 +260,27 @@ ul li { list-style: none;}
     }
     .third-content__dog-image {
         display: flex;
+        justify-content: flex-start;
         align-items: center;
+        position: relative;
+        height: 100%;
         width: 50%;
     }
     .third-dog-image {
         z-index: 1;
-        position: relative;
+        margin-bottom: 30px;
+        position: absolute;
+        top: 120px;
+        left: 0;
+    }
+    .empty-to-image2 {
+        background-color: var(--banana-color);
+        position: absolute;
+        width: 252px;
+        height: 206px;
+        z-index: auto;
+        left: 50%;
+        top: 55%;
     }
     .image-wrapper {
         margin-bottom: 20px;
@@ -314,15 +333,6 @@ ul li { list-style: none;}
         background-color: var(--banana-color);
         width: 182px;
         height: 69px;
-    }
-    .empty-to-image2 {
-        background-color: rgb(252, 195, 2);
-        position: absolute;
-        left: 666px;
-        top: 3146px;
-        width: 252px;
-        height: 206px;
-        z-index: auto;
     }
 
     /*--------------------------------*/
@@ -502,13 +512,17 @@ ul li { list-style: none;}
 
     .sixth {
         width: 100%;
-        height: 575px;
+        height: 81vh;
+        margin: 0;
+        background-image: url("../../images/bg-image-for-statistic.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         background-color: var(--banana-color);
     }
     .sixth-content {
         max-width: 1160px;
         height: 100%;
-        background-image: url("images/bg-image-for-statistic.png");
         margin: 0 auto;
     }
     .sixth-text-wrapper__sixth-title {
@@ -531,7 +545,7 @@ ul li { list-style: none;}
         height: 100%;
     }
     .section-wrapper {
-        height: 45%;
+        height: 40%;
         display: flex;
         flex-direction: column;
         margin: 0;
