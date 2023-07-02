@@ -574,7 +574,6 @@ ul li { list-style: none;}
         height: 1180px;
         background-color: var(--white-color);
     }
-
     .eight-content {
         display: flex;
         flex-direction: column;
@@ -582,20 +581,18 @@ ul li { list-style: none;}
         height: 100%;
         margin: 0 auto;
     }
-
     .eight-text-wrapper {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         justify-content: center;
         height: 35%;
+        width: 100%;
         padding-top: 32px;
     }
-
     .eight-text-wrapper__eight-title {
-        margin-bottom: 50px;
         font-size: 14px;
-        font-family: "Poppins", sans-serif, Bold;
+        font-family: "Poppins", sans-serif, SemiBold;
         color: var(--lightblack-color);
         font-weight: bold;
         line-height: 1.2;
@@ -603,24 +600,21 @@ ul li { list-style: none;}
         -webkit-transform: matrix(5.3, 0, 6.4e-16, 5.286, 0, 0);
         -ms-transform: matrix(5.3, 0, 6.4e-16, 5.3, 0, 0);
     }
-
     .eight-text-wrapper__eight-body-text {
-        width: 640px;
-        margin: 0 auto;
+        width: 60%;
+        margin-top: 50px; /* Измените отступ сверху, если нужно */
+        text-align: center; /* Добавлено для центрирования текста */
         font-size: 33.333px;
         font-family: "Poppins", sans-serif, Regular;
         color: var(--lightblack-color);
         line-height: 1.2;
-        text-align: center;
     }
-
     .eight-cards {
         display: flex;
         justify-content: space-between;
-        height: 100%;
+        height: 65%;
         text-align: left;
     }
-
     .eight-cards__eight-card {
         position: relative;
         z-index: auto;
@@ -631,13 +625,11 @@ ul li { list-style: none;}
         width: 342px;
         height: 78%;
     }
-
     .text-block {
         text-align: left;
         margin: 0;
         width: 80%;
     }
-
     .text-block__eight-card-title {
         margin-top: 50px;
         height: 57px;
@@ -647,7 +639,6 @@ ul li { list-style: none;}
         font-weight: bold;
         line-height: 1.2;
     }
-
     .text-block__calendar {
         position: absolute;
         margin-top: 20px;
@@ -656,7 +647,6 @@ ul li { list-style: none;}
         color: rgb(0, 190, 201);
         line-height: 1.2;
     }
-
     .text-block__eight-card-text {
         margin-top: 70px;
         font-size: 16.667px;
@@ -664,23 +654,21 @@ ul li { list-style: none;}
         color: var(--lightblack-color);
         line-height: 1.2;
     }
-
     .border-enable-style {
         border-width: 0px 2px 2px 2px;
         border-color: rgb(214, 214, 214);
         border-style: solid;
         width: 362px;
+        height: 88%;
+        transition: 0.3s ease-in-out;
     }
-
     .expanded {
-        height: 90%;
+        height: 98%;
     }
-
     .collapse {
         margin-top: 30px;
         width: 80%;
     }
-
     .collapse label {
         z-index: 1;
         user-select: none;
@@ -692,34 +680,26 @@ ul li { list-style: none;}
         color: rgb(0, 190, 201);
         line-height: 1.2;
     }
-
     .collapse label:after {
         content: "+";
     }
-
     .collapse input:checked + label:after {
         content: "-";
     }
-
     .collapse input:not(:checked) + label:after {
         content: "+";
     }
-
     .collapse input {
         display: none;
     }
-
     .col-content {
-        background-color: rgba(128, 128, 128, 0.83);
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.3s;
     }
-
     .collapse input:checked ~ .col-content {
         max-height: 100px; /* Установите желаемую высоту */
     }
-
     .col-content p {
         padding-top: 10px;
         font-size: 16.667px;
@@ -728,6 +708,8 @@ ul li { list-style: none;}
         line-height: 1.2;
         text-align: left;
     }
+
+    /*--------------------------------*/
 
     .footer {
         height: 575px;
