@@ -227,8 +227,10 @@ ul li { list-style: none;}
     .text-block {
         text-align: center;
         margin-top: 50px;
+        width: 100%;
     }
     .text-block__card-title {
+        margin-top: 50px;
         font-size: 37.5px;
         font-family: "Poppins", sans-serif, SemiBold;
         color: rgb(255, 255, 255);
