@@ -4,14 +4,100 @@ body { width: 100%; height: 100%;}
 header, nav, aside, footer { display: block;}
 button, input, a { cursor: pointer;}
 ul li { list-style: none;}
-/*-Variables-*/
-:root {
-    /* using : color: var(--crimson-color); */
-    --crimson-color: rgb(220, 20, 60);
-}
 /*-Media-Queries-*/
 
 /*-For-desktop-resolutions-and-above-*/
 @media screen and (min-width: 1440px) {
-    
+    .footer {
+        width: 100%;
+        height: 575px;
+        background-color: var(--gray-color);
+    }
+    .footer-content {
+        display: flex;
+        max-width: 1160px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .links-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        height: 100%;
+        width: 25%;
+    }
+    .services-title, .about-title {
+        width: 100%;
+        font-size: 37.5px;
+        font-family: "Poppins", sans-serif, SemiBold;
+        color: var(--white-color);
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    .links-list {
+        margin-top: 40px;
+        width: 100%;
+
+    }
+    .links-list__link > a {
+        font-size: 25px;
+        font-family: "Poppins", sans-serif, Regular;
+        color: var(--white-color);
+        line-height: 1.762;
+    }
+    .support {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: right;
+    }
+    .support-text-wrapper__title {
+        width: 100%;
+        font-size: 37.5px;
+        font-family: "Poppins", sans-serif, SemiBold;
+        color: var(--white-color);
+        font-weight: bold;
+        line-height: 1.2;
+
+    }
+    .support-text-wrapper__notation {
+
+        font-size: 25px;
+        font-family: "Poppins", sans-serif, Regular;
+        color: var(--white-color);
+        line-height: 1.762;
+    }
+    .support-input-wrapper {
+        display: flex;
+        width: 100%;
+        height: 90px;
+        margin-top: 50px;
+    }
+    .support-input-wrapper__input {
+        height: 100%;
+        width: 82%;
+        background-color: var(--gold-color);
+    }
+    .support-input-wrapper__button {
+        width: 28%;
+        height: 100%;
+        background-color: var(--turquoise-color);
+        color: var(--white-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .support-contacts-wrapper {
+        display: flex;
+        margin-top: 50px;
+    }
+    .support-contacts-wrapper__link {
+        margin: 0px 8px 0px 8px;
+    }
 }
