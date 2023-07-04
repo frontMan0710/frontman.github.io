@@ -8,25 +8,25 @@ ul li { list-style: none;}
 /*-Tech-Styles-*/
 .body-text-wrapper {
     width: 100%;
-
     display: flex;
     justify-content: center;
 }
 .body-text-wrapper__body-text {
-    width: 640px;
+    background-color: mediumpurple;
+    margin-top: 10px;
+    line-height: normal;
+    width: 760px;
     font-size: 33.3px;
     font-family: "Poppins", sans-serif, Regular;
-
-    color: var(--white-color);
     text-align: center;
 }
-.title-style {
+.sub-title {
+    background-color: crimson;
+    line-height: normal;
     font-size: 66.667px;
     font-family: "Poppins", sans-serif, SemiBold;
     font-weight: bold;
-
 }
-
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -39,6 +39,7 @@ ul li { list-style: none;}
 /*-For-desktop-resolutions-and-above-*/
 @media screen and (min-width: 1440px) {
     .main {
+        padding-top: 120px;
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -223,6 +224,9 @@ ul li { list-style: none;}
     .second-text-wrapper__second-title {
         color: var(--white-color);
     }
+    .body-text-wrapper__body-text {
+
+    }
     .cards {
         display: flex;
         justify-content: space-between;
@@ -364,16 +368,10 @@ ul li { list-style: none;}
         height: 35%;
     }
     .fourth-text-wrapper__fourth-title {
-
+        color: var(--white-color);
     }
     .body-text-wrapper__fourth-body-text {
-
-        width: 640px;
-        font-size: 33.3px;
-        font-family: "Poppins", sans-serif, Regular;
-        line-height: 1.2;
         color: var(--white-color);
-        text-align: center;
     }
     .cards {
         display: flex;
@@ -443,18 +441,10 @@ ul li { list-style: none;}
         padding-top: 32px;
     }
     .fifth-text-wrapper__fifth-title {
-        margin-bottom: 50px;
-        font-size: 14px;
-        font-family: "Poppins", sans-serif, SemiBold;
         color: var(--lightblack-color);
-        line-height: 1.2;
     }
     .body-text-wrapper__fifth-body-text {
-        width: 640px;
-        font-size: 33.333px;
-        font-family: "Poppins", sans-serif, Regular;
-        color: rgb(49, 50, 67);
-        line-height: 1.2;
+        color: var(--lightblack-color);
     }
     .doctor-cards {
         display: flex;
