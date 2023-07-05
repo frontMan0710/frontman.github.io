@@ -1,10 +1,9 @@
-window.addEventListener('scroll', function() {
-    var header = document.querySelector('.header');
-    var headerHeight = header.offsetHeight;
-
-    if (window.pageYOffset > headerHeight) {
-        header.classList.add('fixed');
-    } else {
-        header.classList.remove('fixed');
-    }
-});
+const burgerIcon = document.querySelector(".burger-icon")
+if (burgerIcon) {
+    const menuContent = document.querySelector(".menu-content")
+    burgerIcon.addEventListener("click", function (e) {
+        document.body.classList.toggle("lock")
+        burgerIcon.classList.toggle("active")
+        menuContent.classList.toggle("active")
+    })
+}

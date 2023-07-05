@@ -19,13 +19,22 @@ ul li { list-style: none;}
         z-index: 2;
         background-color: var(--gold-color);
     }
-    .head-wr {
+    .header__burger-menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 100%;
         max-width: 1160px;
         margin: 0 auto;
+    }
+    .header__logo {
+        width: 18%;
+    }
+    .head-wr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
     }
     .head-wr__links-wr {
         display: flex;
@@ -65,5 +74,170 @@ ul li { list-style: none;}
         align-items: center;
         justify-content: center;
         font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 70px;
+        z-index: 2;
+        background-color: var(--gold-color);
+    }
+    .header__logo {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+    }
+    .header__logo > img {
+        max-width: 100%;
+        max-height: 70%;
+    }
+    .burger-icon {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    .burger-icon span, .burger-icon:before, .burger-icon:after {
+        position: absolute;
+        left: 0;
+        height: 10%;
+        width: 100%;
+        background-color: var(--white-color);
+        transition: 0.3s ease 0s;
+    }
+    .burger-icon:before {
+        content: "";
+        top: 0;
+    }
+    .burger-icon:after {
+        content: "";
+        bottom: 0;
+    }
+    .burger-icon span {
+        top: 50%;
+        transform: scale(1) translateY(-50%) translateX(0%);
+    }
+
+    .burger-icon.active:before{
+        content: "";
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
+    }
+    .burger-icon.active:after {
+        content: "";
+        bottom: 50%;
+        transform: rotate(45deg) translateY(50%);
+    }
+    .burger-icon.active span {
+        top: 50%;
+        transform: scale(1) translateX(300%);
+    }
+
+
+    .menu-content.active {
+        left: 0;
+    }
+
+    .header__burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        max-width: 80.56%;
+        width: 80.56%;
+        margin: 0 auto;
+    }
+
+    .menu-content {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--gold-color-transparent);
+        transform: translateX(0%);
+        transition: left 0.3s ease 0s;
+    }
+    .menu-content::before {
+        content: "";
+        position: fixed;
+        height: 70px;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: var(--gold-color);
+    }
+    .head-wr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80.56%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 100px 0px 0px 0px;
+
+
+    }
+    .head-wr__links-wr {
+        display: flex;
+        flex-direction: column;
+    }
+    .head-wr__links-wr > li {
+        margin: 0px 0px 18px 0px;
+        text-align: left;
+    }
+    .head-wr__links-wr > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .head-wr__search-bar {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        background-color: crimson;
+    }
+    .head-wr__search-bar > input {
+        height: 100%;
+        width: 100%;
+        background-color: var(--banana-color);
+    }
+    .head-wr__search-bar > button {
+        height: 100%;
+        width: 100%;
+    }
+    input::placeholder {
+        color: var(--white-color);
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .head-wr__search-bar > button {
+        background-color: var(--turquoise-color);
+        color: var(--white-color);
+        width: 70px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .head-wr__links-wr-link > a {
+        color: var(--white-color);
+        font-family: "Poppins", sans-serif, Medium;
+        font-size: 29px;
+        line-height: 1.2;
     }
 }
