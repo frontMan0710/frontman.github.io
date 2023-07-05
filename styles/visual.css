@@ -14,3 +14,38 @@
     --lightgray-color: rgb(214, 214, 214);
     --gold-color-transparent: rgba(218, 172, 0, 0.9);
 }
+
+/*-Images-max-size-*/
+.rectangle-image {
+    max-width: 419px;
+    max-height: 604px;
+}
+.square-image {
+    max-width: 506px;
+    max-height: 480px;
+}
+.card-image {
+    max-width: 342px;
+    max-height: 353px;
+}
+.doctor-card-image {
+    max-width: 361px;
+    max-height: 351px;
+}
+/*-Specific-images-*/
+#heart-image {
+    max-width: 102px;
+    max-height: 89px;
+}
+#stethoscope-image {
+    max-width: 75px;
+    max-height: 88px;
+}
+#syringe-image {
+    max-width: 90px;
+    max-height: 90px;
+}
+#logotype-image {
+    max-width: 212px;
+    max-height: 56px;
+}
