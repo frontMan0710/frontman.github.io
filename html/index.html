@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title1</title>
-    <link rel="stylesheet" href="../styles/styles.css">
 
+    <link rel="stylesheet" href="../styles/js-libs/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="../styles/js-libs/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css">
+
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 <!---Header------------------------------------------------------------------------------------------------------------>
@@ -107,20 +110,20 @@
             <div class="second-content">
 
                 <div class="second-text-wrapper">
-                    <h2 class="second-text-wrapper__second-title sub-title fade-in">Title Here</h2>
+                    <h2 class="second-text-wrapper__second-title  fade-in">Title Here</h2>
                     <div class="body-text-wrapper">
-                        <p class="body-text-wrapper__second-body-text body-text fade-in">
+                        <p class="body-text-wrapper__second-body-text  fade-in">
                             Lorem ipsum available, but the majority have suffered alteration in some form.
                         </p>
                     </div>
                 </div>
 
-                <div class="cards">
+                <div class="cards card-slider">
                     <div class="cards__card">
                         <img src="../images/card1.png" alt="" class="card-image">
                         <div class="second-text-block fade-in">
-                            <h2 class="second-text-block__card-title">Veterinarian</h2>
-                            <p class="second-text-block__card-text">
+                            <h2 class="second-text-block__card-title mobile-sub-title">Veterinarian</h2>
+                            <p class="second-text-block__card-text mobile-body-text">
                                 Lorem ipsum available, but the majority have suffered alteration in some.
                             </p>
                         </div>
@@ -180,9 +183,9 @@
             <div class="fourth-content">
 
                 <div class="fourth-text-wrapper">
-                    <h2 class="fourth-text-wrapper__fourth-title sub-title fade-in">Title Here</h2>
+                    <h2 class="fourth-text-wrapper__fourth-title  fade-in">Title Here</h2>
                     <div class="body-text-wrapper">
-                        <p class="body-text-wrapper__fourth-body-text body-text fade-in">
+                        <p class="body-text-wrapper__fourth-body-text  fade-in">
                             Lorem ipsum available, but the majority have suffered alteration in some form.
                         </p>
                     </div>
@@ -236,9 +239,9 @@
             <div class="fifth-content">
 
                 <div class="fifth-text-wrapper">
-                    <h2 class="fifth-text-wrapper__fifth-title sub-title fade-in">The vetcare team</h2>
+                    <h2 class="fifth-text-wrapper__fifth-title  fade-in">The vetcare team</h2>
                     <div class="body-text-wrapper">
-                        <p class="body-text-wrapper__fifth-body-text body-text fade-in">
+                        <p class="body-text-wrapper__fifth-body-text  fade-in">
                             Lorem ipsum available, but the majority have suffered alteration in some form.
                         </p>
                     </div>
@@ -361,9 +364,9 @@
             <div class="seventh-content">
 
                 <div class="seventh-text-wrapper">
-                    <h2 class="seventh-text-wrapper__seventh-title fade-in sub-title">Recent Posts</h2>
+                    <h2 class="seventh-text-wrapper__seventh-title  fade-in">Recent Posts</h2>
                     <div class="body-text-wrapper">
-                        <p class="body-text-wrapper__seventh-body-text body-text fade-in">
+                        <p class="body-text-wrapper__seventh-body-text  fade-in">
                             Lorem ipsum available, but the majority have suffered alteration in some form.
                         </p>
                     </div>
@@ -518,10 +521,34 @@
         </div>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+            crossorigin="anonymous"></script>
+
+    <script src="../styles/js-libs/OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.cards').owlCarousel({
+                items: 3,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 3
+                    }
+                },
+            })
+        })
+    </script>
     <script src="../blocks/check.js"></script>
     <script src="../blocks/animations.js"></script>
     <script src="../blocks/main/collapsible.js"></script>
+    <script src="../blocks/main/main.js"></script>
     <script src="../blocks/header/header.js"></script>
+
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
