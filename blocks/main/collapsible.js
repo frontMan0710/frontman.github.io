@@ -1,6 +1,6 @@
 var collapseInputs = document.querySelectorAll('.collapse input');
 var colContents = document.querySelectorAll('.col-content');
-var parentContainers = document.querySelectorAll('.seventh-cards__seventh-card');
+var parentContainers = document.querySelectorAll('.collapse');
 
 // Обрабатываем каждый коллапс отдельно
 collapseInputs.forEach(function(collapseInput, index) {
