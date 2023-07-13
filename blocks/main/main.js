@@ -1,4 +1,3 @@
-
 const isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i)
@@ -21,8 +20,6 @@ var textBlocks = [
     document.querySelectorAll(".body-text-wrapper__fifth-body-text"),
     document.querySelectorAll(".body-text-wrapper__seventh-body-text")
 ]
-
-
 if (isMobile.check()) {
     titles.forEach(function (title) {
         title.classList.add("mobile-sub-title");
@@ -43,4 +40,3 @@ else {
         });
     });
 }
-

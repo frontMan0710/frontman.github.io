@@ -60,8 +60,18 @@ ul li { list-style: none;}
     }
     .head-wr__search-bar > input {
         background-color: var(--banana-color);
+        color: var(--white-color);
+        font-family: "Poppins", sans-serif, Regular;
+        user-select: none;
+        border: none;
+        line-height: 1.2;
         width: 200px;
         height: 50px;
+        font-size: 21px;
+        padding: 0 20px 0 20px;
+    }
+    .head-wr__search-bar > input:focus {
+        outline: var(--turquoise-color) 2px;
     }
     input::placeholder {
         color: var(--white-color);
@@ -69,7 +79,6 @@ ul li { list-style: none;}
         line-height: 1.2;
         text-align: left;
         font-size: 21px;
-        padding-left: 20px;
     }
     .head-wr__search-bar > button {
         background-color: var(--turquoise-color);
@@ -138,8 +147,25 @@ ul li { list-style: none;}
     }
     .head-wr__search-bar > input {
         background-color: var(--banana-color);
+        color: var(--white-color);
+        font-family: "Poppins", sans-serif, Regular;
+        user-select: none;
+        border: none;
+        line-height: 1.2;
         height: 100%;
         width: 75%;
+        font-size: 21px;
+        padding: 0 20px 0 20px;
+    }
+    .head-wr__search-bar > input:focus {
+        outline: var(--turquoise-color) 2px;
+    }
+    input::placeholder {
+        color: var(--white-color);
+        font-family: "Poppins", sans-serif;
+        line-height: 1.2;
+        text-align: left;
+        font-size: 20px;
     }
     .head-wr__search-bar > button {
         background-color: var(--turquoise-color);
@@ -151,17 +177,7 @@ ul li { list-style: none;}
         width: 25%;
         font-size: 30px;
     }
-    input::placeholder {
-        color: var(--white-color);
-        font-family: "Poppins", sans-serif;
-        line-height: 1.2;
-        text-align: left;
-        font-size: 20px;
-        padding-left: 20px;
-    }
 }
-
-
 @media screen and (max-width: 1023px) {
     .header {
         background-color: var(--gold-color);
@@ -192,7 +208,7 @@ ul li { list-style: none;}
         width: 30px;
         height: 20px;
     }
-    .burger-icon span, .burger-icon:before, .burger-icon:after {
+    .burger-icon span, .burger-icon::before, .burger-icon::after {
         background-color: var(--white-color);
         position: absolute;
         height: 10%;
@@ -200,11 +216,11 @@ ul li { list-style: none;}
         left: 0;
         transition: 0.3s ease 0s;
     }
-    .burger-icon:before {
+    .burger-icon::before {
         content: "";
         top: 0;
     }
-    .burger-icon:after {
+    .burger-icon::after {
         content: "";
         bottom: 0;
     }
@@ -212,12 +228,12 @@ ul li { list-style: none;}
         top: 50%;
         transform: scale(1) translateY(-50%) translateX(0%);
     }
-    .burger-icon.active:before{
+    .burger-icon.active::before{
         content: "";
         top: 50%;
         transform: rotate(-45deg) translateY(-50%);
     }
-    .burger-icon.active:after {
+    .burger-icon.active::after {
         content: "";
         bottom: 50%;
         transform: rotate(45deg) translateY(50%);
@@ -263,14 +279,14 @@ ul li { list-style: none;}
         width: 90.56%;
         height: 100%;
         margin: 0 auto;
-        padding: 100px 0px 0px 0px;
+        padding: 100px 0 0 0;
     }
     .head-wr__links-wr {
         display: flex;
         flex-direction: column;
     }
     .head-wr__links-wr > li {
-        margin: 0px 0px 18px 0px;
+        margin: 0 0 18px 0;
         text-align: left;
     }
     .head-wr__links-wr > li:last-child {
@@ -284,12 +300,22 @@ ul li { list-style: none;}
     }
     .head-wr__search-bar > input {
         background-color: var(--banana-color);
+        color: var(--white-color);
+        font-family: "Poppins", sans-serif, Regular;
+        user-select: none;
+        border: none;
+        line-height: 1.2;
         height: 100%;
         width: 100%;
+        font-size: 21px;
+        padding: 0 20px 0 20px;
     }
     .head-wr__search-bar > button {
         height: 100%;
         width: 100%;
+    }
+    .head-wr__search-bar > input:focus {
+        outline: var(--turquoise-color) 2px;
     }
     input::placeholder {
         color: var(--white-color);
@@ -297,7 +323,6 @@ ul li { list-style: none;}
         line-height: 1.2;
         text-align: left;
         font-size: 20px;
-        padding-left: 20px;
     }
     .head-wr__search-bar > button {
         background-color: var(--turquoise-color);
