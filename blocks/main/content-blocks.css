@@ -657,17 +657,17 @@ ul li { list-style: none;}
     /*---Footer-in-next-file------------*/
 }
 /*-For-Laptop-and-iPad-resolutions-*/
-@media screen and (max-width: 1439px) and (min-width: 1024px) {
+@media screen and (max-width: 1439px) and (min-width: 768px) {
     .main {
         overflow: hidden;
         width: 100%;
         height: 100%;
-        padding-top: 100px;
     }
     .start {
         background-color: var(--banana-color);
         width: 100%;
-        height: 768px;
+        height: auto;
+        padding: 120px 0 50px 0;
     }
     .start-content {
         display: flex;
@@ -688,13 +688,13 @@ ul li { list-style: none;}
         font-family: "Poppins", sans-serif, SemiBold;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 5vw;
+        font-size: calc(30px + 26 * (100vw / 1440));
     }
     .start-text-wrapper__start-body-text {
         color: var(--white-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: 1.2;
-        font-size: 2vw;
+        font-size: calc(15px + 15 * (100vw / 1440));
         margin-top: 50px;
     }
     .start-content__dog-image {
@@ -704,8 +704,8 @@ ul li { list-style: none;}
         width: 45%;
     }
     .start-content__dog-image > img {
-        max-height: 80%;
-        max-width: 80%;
+        max-height: 90%;
+        max-width: 90%;
     }
     .buttons {
         width: 100%;
@@ -721,7 +721,7 @@ ul li { list-style: none;}
         justify-content: center;
         font-weight: bold;
         line-height: 1.2;
-        width: 182px;
+        width: 160px;
         height: 69px;
         font-size: 21px;
         border-radius: 7px;
@@ -735,7 +735,7 @@ ul li { list-style: none;}
         justify-content: center;
         font-weight: bold;
         line-height: 1.2;
-        width: 182px;
+        width: 160px;
         height: 69px;
         font-size: 21px;
         margin-left: 35px;
@@ -749,7 +749,7 @@ ul li { list-style: none;}
     .first {
         background-color: var(--white-color);
         width: 100%;
-        height: 780px;
+        height: 720px;
     }
     .first-content {
         display: flex;
@@ -762,27 +762,31 @@ ul li { list-style: none;}
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        width: 45%;
+        width: 55%;
     }
     .first-text-wrapper__first-title {
         color: var(--lightblack-color);
         font-family: "Poppins", sans-serif, SemiBold;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 3.6vw;
+        font-size: calc(26px + 14 * (100vw / 1440));
     }
     .body-text-wrapper__first-body-text {
         color: var(--lightblack-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: 1.2;
-        font-size: 2vw;
+        font-size: calc(15px + 15 * (100vw / 1440));
     }
     .first-content__dog-image {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         position: relative;
-        width: 55%;
+        width: 45%;
+    }
+    .first-content__dog-image > img {
+        max-height: 90%;
+        max-width: 90%;
     }
     .dog-image {
         z-index: 1;
@@ -821,7 +825,7 @@ ul li { list-style: none;}
     .second {
         background-color: var(--banana-color);
         width: 100%;
-        height: 1017px;
+        height: 880px;
     }
     .second-content {
         display: flex;
@@ -829,6 +833,7 @@ ul li { list-style: none;}
         max-width: 90.56%;
         height: 100%;
         margin: 0 auto;
+        padding: 20px 0 20px 0;
     }
     .second-text-wrapper {
         display: flex;
@@ -842,14 +847,14 @@ ul li { list-style: none;}
         font-family: "Poppins", sans-serif, SemiBold;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 3.6vw;
+        font-size: calc(25px + 20 * (100vw / 1440));
     }
     .body-text-wrapper__second-body-text {
         color: var(--white-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: normal;
         width: 760px;
-        font-size: 2vw;
+        font-size: calc(15px + 15 * (100vw / 1440));
     }
     .cards {
         display: inline-flex;
@@ -873,6 +878,8 @@ ul li { list-style: none;}
     .second-text-block {
         text-align: center;
         width: 100%;
+        height: 50%;
+        margin-top: 20px;
     }
     .second-text-block__card-title {
         color: var(--white-color);
@@ -880,13 +887,13 @@ ul li { list-style: none;}
         font-weight: bold;
         line-height: 1.2;
         width: 100%;
-        font-size: 2.67vw;
+        font-size: calc(20px + 20 * (100vw / 1440));
     }
     .second-text-block__card-text {
         color: var(--white-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: 1.2;
-        font-size: 25px;
+        font-size: calc(14px + 14 * (100vw / 1440));
         margin-top: 15px;
     }
     .slider-controls {
@@ -911,13 +918,17 @@ ul li { list-style: none;}
         justify-content: flex-end;
         align-items: center;
         position: relative;
-        width: 55%;
+        width: 45%;
     }
     .third-dog-image {
         position: absolute;
         z-index: 1;
         margin-bottom: 30px;
         left: 0;
+    }
+    .third-content__dog-image > img {
+        max-width: 90%;
+        max-height: 90%;
     }
     .empty-to-image2 {
         background-color: var(--banana-color);
@@ -934,20 +945,20 @@ ul li { list-style: none;}
         flex-direction: column;
         justify-content: center;
         text-align: right;
-        width: 45%;
+        width: 55%;
     }
     .third-text-wrapper__third-title {
         color: var(--lightblack-color);
         font-family: "Poppins", sans-serif, Regular;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 3.6vw;
+        font-size: calc(26px + 14 * (100vw / 1440));
     }
     .third-text-wrapper__third-body-text {
         color: var(--lightblack-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: 1.2;
-        font-size: 2vw;
+        font-size: calc(15px + 15 * (100vw / 1440));
     }
     .third-button {
         display: flex;
@@ -974,7 +985,7 @@ ul li { list-style: none;}
     .fourth {
         background-color: var(--banana-color);
         width: 100%;
-        height: 1017px;
+        height: auto;
     }
     .fourth-content {
         display: flex;
@@ -982,27 +993,28 @@ ul li { list-style: none;}
         max-width: 90.56%;
         height: 100%;
         margin: 0 auto;
+        padding: 20px 0 50px 0;
     }
     .fourth-text-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        height: 35%;
+        height: 240px;
     }
     .fourth-text-wrapper__fourth-title {
         color: var(--white-color);
         font-family: "Poppins", sans-serif, SemiBold;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 3.6vw;
+        font-size: calc(30px + 26 * (100vw / 1440));
     }
     .body-text-wrapper__fourth-body-text {
         color: var(--white-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: normal;
         width: 760px;
-        font-size: 2vw;
+        font-size: calc(15px + 15 * (100vw / 1440));
     }
     .original-price {
         color: var(--white-color);
@@ -1010,7 +1022,7 @@ ul li { list-style: none;}
         text-decoration: line-through;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 40px;
+        font-size: calc(20px + 20 * (100vw / 1440));
     }
     .transparent-empty {
         color: transparent;
@@ -1020,8 +1032,16 @@ ul li { list-style: none;}
         font-family: "Poppins", sans-serif, SemiBold;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 40px;
+        font-size: calc(20px + 20 * (100vw / 1440));
         margin-left: 20px;
+    }
+    .fourth-card {
+        height: 100%;
+    }
+    .cards__price {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
     }
     .cards__buy {
         background-color: var(--turquoise-color);
@@ -1032,8 +1052,9 @@ ul li { list-style: none;}
         text-align: center;
         width: 199px;
         height: 60px;
-        font-size: 25px;
+        font-size: calc(15px + 10 * (100vw / 1440));
         border-radius: 50px;
+        margin-top: 20px;
     }
     .fourth-slider-controls {
         display: none;
@@ -1044,7 +1065,7 @@ ul li { list-style: none;}
     .fifth {
         background-color: var(--white-color);
         width: 100%;
-        height: 1017px;
+        height: 860px;
     }
     .fifth-content {
         display: flex;
@@ -1065,14 +1086,14 @@ ul li { list-style: none;}
         font-family: "Poppins", sans-serif, SemiBold;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 3.6vw;
+        font-size: calc(30px + 26 * (100vw / 1440));
     }
     .body-text-wrapper__fifth-body-text {
         color: var(--lightblack-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: normal;
         width: 760px;
-        font-size: 2vw;
+        font-size: calc(15px + 15 * (100vw / 1440));
     }
     .doctor-cards {
         display: flex;
@@ -1085,6 +1106,13 @@ ul li { list-style: none;}
         align-items: center;
         width: 342px;
         height: 525px;
+        padding: 20px 0 40px 0;
+    }
+    .doctors-text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30%;
     }
     .doctors-text-block__card-title {
         color: var(--lightblack-color);
@@ -1092,7 +1120,7 @@ ul li { list-style: none;}
         font-weight: bold;
         line-height: 1.2;
         text-align: center;
-        font-size: 2.67vw;
+        font-size: calc(14px + 26 * (100vw / 1440));
         margin-top: 20px;
     }
     .doctors-text-block__card-text {
@@ -1100,7 +1128,7 @@ ul li { list-style: none;}
         font-family: "Poppins", sans-serif, Regular;
         line-height: 1.2;
         text-align: center;
-        font-size: 25px;
+        font-size: calc(14px + 14 * (100vw / 1440));
         margin-top: 20px;
     }
     .contact-links {
@@ -1108,7 +1136,8 @@ ul li { list-style: none;}
         justify-content: space-between;
         text-align: center;
         width: 184px;
-        height: 35px;
+        height: 30%;
+        margin-top: 20px;
     }
     .contact-links__link {
         filter: brightness(0);
@@ -1155,7 +1184,7 @@ ul li { list-style: none;}
         color: var(--white-color);
         font-family: "Poppins", sans-serif, Medium;
         line-height: 1.2;
-        font-size: 40px;
+        font-size: calc(10px + 30 * (100vw / 1440));
         margin-top: 50px;
     }
     .sixth-section__mark {
@@ -1163,7 +1192,7 @@ ul li { list-style: none;}
         font-family: "Poppins", sans-serif, Bold;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 35px;
+        font-size: calc(14px + 26 * (100vw / 1440));
         margin-top: 20px;
     }
 
@@ -1172,7 +1201,7 @@ ul li { list-style: none;}
     .seventh {
         background-color: var(--white-color);
         width: 100%;
-        height: 1180px;
+        height: auto;
     }
     .seventh-content {
         display: flex;
@@ -1180,27 +1209,28 @@ ul li { list-style: none;}
         max-width: 90.56%;
         height: 100%;
         margin: 0 auto;
+        padding: 20px 0 50px 0;
     }
     .seventh-text-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        height: 35%;
+        height: 240px;
     }
     .seventh-text-wrapper__seventh-title {
         color: var(--lightblack-color);
         font-family: "Poppins", sans-serif, SemiBold;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 3.6vw;
+        font-size: calc(30px + 26 * (100vw / 1440));
     }
     .body-text-wrapper__seventh-body-text {
         color: var(--lightblack-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: normal;
         width: 760px;
-        font-size: 2vw;
+        font-size: calc(15px + 15 * (100vw / 1440));
     }
     .seventh-cards {
         display: inline-flex;
@@ -1215,7 +1245,7 @@ ul li { list-style: none;}
         justify-content: space-between;
         align-items: center;
         width: 33%;
-        height: calc(525px + 149 * (100vw / 1440));
+        height: calc(425px + 289 * (100vw / 1440));
     }
     .seventh-cards__seventh-card > img {
         max-width: 100%;
@@ -1227,7 +1257,7 @@ ul li { list-style: none;}
         justify-content: space-evenly;
         text-align: left;
         width: 90%;
-        height: 90%;
+        height: 350px;
         margin-top: 20px;
     }
     .seventh-text-block__seventh-card-title {
@@ -1235,26 +1265,25 @@ ul li { list-style: none;}
         font-family: "Poppins", sans-serif, SemiBold;
         font-weight: bold;
         line-height: 1.2;
-        font-size: 2.4vw;
+        font-size: calc(8px + 28 * (100vw / 1440));
     }
     .seventh-text-block__calendar {
         color: var(--turquoise-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: 1.2;
-        font-size: 1.6vw;
+        font-size: calc(10px + 18 * (100vw / 1440));
     }
     .seventh-text-block__seventh-card-text {
         color: var(--lightblack-color);
         font-family: "Poppins", sans-serif, Regular;
         line-height: 1.2;
-        font-size: 1.6vw;
+        font-size: calc(10px + 18 * (100vw / 1440));
     }
     .border-enable-style {
         border-color: var(--lightgray-color);
         border-style: solid;
         border-width: 0 2px 2px 2px;
         width: 33%;
-        height: calc(525px + 149 * (100vw / 1440));
         transition: 0.3s ease-in-out;
     }
     .seventh-text-block__info-link {
@@ -1263,16 +1292,15 @@ ul li { list-style: none;}
         user-select: none;
         cursor: pointer;
         line-height: 1.2;
-        font-size: 1.7vw;
         width: 100%;
+        font-size: calc(14px + 14 * (100vw / 1440));
     }
     .seventh-slider-controls {
         display: none;
     }
-
 }
 /*-For-mobile-resolutions-*/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
     .main {
         overflow: hidden;
         width: 100%;
