@@ -420,7 +420,7 @@ ul li { list-style: none;}
     .support-input-wrapper {
         display: flex;
         width: 100%;
-        height: 100%;
+        height: 50px;
         margin-top: 4vh;
     }
     .support-input-wrapper__input {
@@ -430,8 +430,8 @@ ul li { list-style: none;}
         user-select: none;
         border: none;
         line-height: 1.2;
-        width: 75vw;
-        height: 8vh;
+        height: 100%;
+        width: 100%;
         font-size: calc(16px + 14 * (100vw / 1440));
         padding: 0 20px 0 20px;
     }
@@ -441,11 +441,11 @@ ul li { list-style: none;}
     .support-input-wrapper__button {
         background-color: var(--turquoise-color);
         color: var(--white-color);
-        width: 25vw;
-        height: 8vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 70px;
+        height: 50px;
         font-size: 30px;
     }
     .support-contacts-wrapper {
