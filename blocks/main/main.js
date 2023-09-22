@@ -7,12 +7,14 @@ const isMobile = {
     },
     check: function () {
         return (
-        isMobile.Android() || isMobile.Windows()
+        isMobile.Android() ||
+        isMobile.Windows()
         )
     }
 }
 var titles = document.querySelectorAll("h2")
 var textBlocks = [
+    document.querySelectorAll(".start-text-wrapper__start-body-text"),
     document.querySelectorAll(".body-text-wrapper__first-body-text"),
     document.querySelectorAll(".body-text-wrapper__second-body-text"),
     document.querySelectorAll(".body-text-wrapper__third-body-text"),

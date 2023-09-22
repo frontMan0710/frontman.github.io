@@ -317,6 +317,10 @@ ul li { list-style: none;}
     .head-wr__search-bar > input:focus {
         outline: var(--turquoise-color) 2px;
     }
+    input:focus::placeholder {
+        opacity: 0.4;
+        transition: opacity 0.2s ease;
+    }
     input::placeholder {
         color: var(--white-color);
         font-family: "Poppins", sans-serif;
