@@ -6,6 +6,8 @@
     <meta name="author" content="Bodya @frontMan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VetPage</title>
+    <link rel="stylesheet" href="styles/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
+
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -95,56 +97,46 @@
         <section class="second">
             <div class="second-content">
                 <div class="second-text-wrapper">
-                    <h2 class="second-text-wrapper__second-title  fade-in">Title Here</h2>
+                    <h2 class="second-text-wrapper__second-title fade-in">Title Here</h2>
                     <div class="body-text-wrapper">
                         <p class="body-text-wrapper__second-body-text  fade-in">
                             Lorem ipsum available, but the majority have <br> suffered alteration in some form.
                         </p>
                     </div>
                 </div>
-                <div class="cards slider">
-                    <div class="cards__card slider__slide show">
-                        <img src="images/card1.png" loading="lazy" class="card-image">
-                        <div class="second-text-block fade-in">
-                            <h2 class="second-text-block__card-title mobile-sub-title">Veterinarian</h2>
-                            <p class="second-text-block__card-text">
-                                Lorem ipsum available, but <br> the majority have suffered <br> alteration in some.
-                            </p>
+
+                <div class="cards swiper">
+                    <div class="cards-wrapper swiper-wrapper">
+                        <div class="cards__card swiper-slide">
+                            <img src="images/card1.png" loading="lazy" class="card-image">
+                            <div class="card-text-block fade-in">
+                                <h2 class="card-text-block__card-title ">Veterinarian</h2>
+                                <p class="card-text-block__card-text">
+                                    Lorem ipsum available, but <br> the majority have suffered <br> alteration in some.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cards__card slider__slide">
-                        <img src="images/card2.png" loading="lazy" class="card-image" alt="">
-                        <div class="second-text-block fade-in">
-                            <h2 class="second-text-block__card-title">Vaccination Care</h2>
-                            <p class="second-text-block__card-text">
-                                Lorem ipsum available, but <br> the majority have suffered <br> alteration in some.
-                            </p>
+                        <div class="cards__card swiper-slide">
+                            <img src="images/card2.png" loading="lazy" class="card-image" alt="">
+                            <div class="card-text-block fade-in">
+                                <h2 class="card-text-block__card-title">Vaccination Care</h2>
+                                <p class="card-text-block__card-text">
+                                    Lorem ipsum available, but <br> the majority have suffered <br> alteration in some.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cards__card slider__slide">
-                        <img src="images/card3.png" loading="lazy" class="card-image" alt="">
-                        <div class="second-text-block fade-in">
-                            <h2 class="second-text-block__card-title">Dental Care</h2>
-                            <p class="second-text-block__card-text">
-                                Lorem ipsum available, but <br> the majority have suffered <br> alteration in some.
-                            </p>
+                        <div class="cards__card swiper-slide">
+                            <img src="images/card3.png" loading="lazy" class="card-image" alt="">
+                            <div class="card-text-block fade-in">
+                                <h2 class="card-text-block__card-title">Dental Care</h2>
+                                <p class="card-text-block__card-text">
+                                    Lorem ipsum available, but <br> the majority have suffered <br> alteration in some.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slider-controls">
-                    <button class="previous-button">&#8249;</button>
-                    <button class="next-button">&#8250;</button>
-                </div>
-                <div class="slider-navigation">
-                    <div class="slider-scrollbar"></div>
-                    <div class="scrollbar-arrows">
-                        <div class="scrollbar-left__arrow"></div>
-                        <div class="scrollbar-right__arrow"></div>
                     </div>
                 </div>
             </div>
-
-            <!-- Slider main container -->
         </section>
         <section class="third">
             <div class="third-content">
@@ -178,47 +170,45 @@
                         </p>
                     </div>
                 </div>
-                <div class="cards fourth-slider">
-                    <div class="cards__card fourth-card fourth-slider__slide show">
-                        <img src="images/dog-to-card.png" loading="lazy" class="card-image">
-                        <div class="cards__price fade-in">
-                            <span class="original-price">
-                                <span class="transparent-empty">.</span>$50
-                            </span>
-                            <span class="discounted-price">$30</span>
+                <div class="cards fourth-slider swiper">
+                    <div class="cards-wrapper swiper-wrapper">
+                        <div class="cards__card fourth-card fourth-slider__slide swiper-slide">
+                            <img src="images/dog-to-card.png" loading="lazy" class="card-image">
+                            <div class="cards__price fade-in">
+                                <span class="original-price">
+                                    <span class="transparent-empty">.</span>$50
+                                </span>
+                                    <span class="discounted-price">$30</span>
+                            </div>
+                            <button class="cards__buy fade-in">
+                                Buy Now
+                            </button>
                         </div>
-                        <button class="cards__buy fade-in">
-                            Buy Now
-                        </button>
-                    </div>
-                    <div class="cards__card fourth-card fourth-slider__slide">
-                        <img src="images/dog-to-card2.png" loading="lazy" class="card-image">
-                        <div class="cards__price fade-in">
-                            <span class="original-price">
-                                <span class="transparent-empty">.</span>$40
-                            </span>
-                            <span class="discounted-price">$25</span>
+                        <div class="cards__card fourth-card fourth-slider__slide swiper-slide">
+                            <img src="images/dog-to-card2.png" loading="lazy" class="card-image">
+                            <div class="cards__price fade-in">
+                                <span class="original-price">
+                                    <span class="transparent-empty">.</span>$40
+                                </span>
+                                    <span class="discounted-price">$25</span>
+                            </div>
+                            <button class="cards__buy fade-in">
+                                Buy Now
+                            </button>
                         </div>
-                        <button class="cards__buy fade-in">
-                            Buy Now
-                        </button>
-                    </div>
-                    <div class="cards__card fourth-card fourth-slider__slide">
-                        <img src="images/dog-to-card3.png" loading="lazy" class="card-image">
-                        <div class="cards__price fade-in">
+                        <div class="cards__card fourth-card fourth-slider__slide swiper-slide">
+                            <img src="images/dog-to-card3.png" loading="lazy" class="card-image">
+                            <div class="cards__price fade-in">
                             <span class="original-price">
                                 <span class="transparent-empty">.</span>$45
                             </span>
-                            <span class="discounted-price">$20</span>
+                                <span class="discounted-price">$20</span>
+                            </div>
+                            <button class="cards__buy fade-in">
+                                Buy Now
+                            </button>
                         </div>
-                        <button class="cards__buy fade-in">
-                            Buy Now
-                        </button>
                     </div>
-                </div>
-                <div class="fourth-slider-controls">
-                    <button class="fourth-slider-controls__previous-button">&#8249;</button>
-                    <button class="fourth-slider-controls__next-button">&#8250;</button>
                 </div>
             </div>
         </section>
@@ -232,80 +222,78 @@
                         </p>
                     </div>
                 </div>
-                <div class="cards doctor-cards fifth-slider">
-                    <div class="cards__card fifth-slider__slide show">
-                        <img src="images/doc1.png" loading="lazy" class="doctor-card-image">
-                        <div class="doctors-text-block fade-in">
-                            <span class="doctors-text-block__card-title">Jennifer Mullen</span>
-                            <p class="doctors-text-block__card-text">
-                                VETERINARY
-                            </p>
+                <div class="cards doctor-cards fifth-slider swiper">
+                    <div class="cards-wrapper swiper-wrapper">
+                        <div class="cards__card fifth-slider__slide swiper-slide">
+                            <img src="images/doc1.png" loading="lazy" class="doctor-card-image">
+                            <div class="doctors-text-block fade-in">
+                                <span class="doctors-text-block__card-title">Jennifer Mullen</span>
+                                <p class="doctors-text-block__card-text">
+                                    VETERINARY
+                                </p>
+                            </div>
+                            <div class="contact-links fade-in">
+                                <a href="#">
+                                    <img src="images/docinstagram.png" alt="@" class="contact-links__link" height="35" width="35">
+                                </a>
+                                <a href="#">
+                                    <img src="images/docfacebook.png" alt="@" class="contact-links__link" height="35" width="35">
+                                </a>
+                                <a href="#">
+                                    <img src="images/doctwitter.png" alt="@" class="contact-links__link" height="35" width="35">
+                                </a>
+                                <a href="#">
+                                    <img src="images/docwhatsapp.png" alt="@" class="contact-links__link" height="35" width="35">
+                                </a>
+                            </div>
                         </div>
-                        <div class="contact-links fade-in">
-                            <a href="#">
-                                <img src="images/docinstagram.png" alt="" height="35" width="35">
-                            </a>
-                            <a href="#">
-                                <img src="images/docfacebook.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                            <a href="#">
-                                <img src="images/doctwitter.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                            <a href="#">
-                                <img src="images/docwhatsapp.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
+                        <div class="cards__card fifth-slider__slide swiper-slide">
+                            <img src="images/doc2.png" loading="lazy" class="doctor-card-image">
+                            <div class="doctors-text-block fade-in">
+                                <span class="doctors-text-block__card-title">Sheeren Collins</span>
+                                <p class="doctors-text-block__card-text">
+                                    ADMINISTRATION
+                                </p>
+                            </div>
+                            <div class="contact-links fade-in">
+                                <a href="#">
+                                    <img src="images/docinstagram.png" alt="" class="contact-links__link" height="35" width="35">
+                                </a>
+                                <a href="#">
+                                    <img src="images/docfacebook.png" alt="" class="contact-links__link" height="35" width="35">
+                                </a>
+                                <a href="#">
+                                    <img src="images/doctwitter.png" alt="" class="contact-links__link" height="35" width="35">
+                                </a>
+                                <a href="#">
+                                    <img src="images/docwhatsapp.png" alt="" class="contact-links__link" height="35" width="35">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cards__card fifth-slider__slide swiper-slide">
+                            <img src="images/doc3.png" loading="lazy" class="doctor-card-image">
+                            <div class="doctors-text-block fade-in">
+                                <span class="doctors-text-block__card-title">Jennifer Mullen</span>
+                                <p class="doctors-text-block__card-text">
+                                    VETERINARY
+                                </p>
+                            </div>
+                            <div class="contact-links fade-in">
+                                <a href="#">
+                                    <img src="images/docinstagram.png" alt="" class="contact-links__link" height="35" width="35">
+                                </a>
+                                <a href="#">
+                                    <img src="images/docfacebook.png" alt="" class="contact-links__link" height="35" width="35">
+                                </a>
+                                <a href="#">
+                                    <img src="images/doctwitter.png" alt="" class="contact-links__link" height="35" width="35">
+                                </a>
+                                <a href="#">
+                                    <img src="images/docwhatsapp.png" alt="" class="contact-links__link" height="35" width="35">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="cards__card fifth-slider__slide">
-                        <img src="images/doc2.png" loading="lazy" class="doctor-card-image">
-                        <div class="doctors-text-block fade-in">
-                            <span class="doctors-text-block__card-title">Sheeren Collins</span>
-                            <p class="doctors-text-block__card-text">
-                                ADMINISTRATION
-                            </p>
-                        </div>
-                        <div class="contact-links fade-in">
-                            <a href="#">
-                                <img src="images/docinstagram.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                            <a href="#">
-                                <img src="images/docfacebook.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                            <a href="#">
-                                <img src="images/doctwitter.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                            <a href="#">
-                                <img src="images/docwhatsapp.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cards__card fifth-slider__slide">
-                        <img src="images/doc3.png" loading="lazy" class="doctor-card-image">
-                        <div class="doctors-text-block fade-in">
-                            <span class="doctors-text-block__card-title">Jennifer Mullen</span>
-                            <p class="doctors-text-block__card-text">
-                                VETERINARY
-                            </p>
-                        </div>
-                        <div class="contact-links fade-in">
-                            <a href="#">
-                                <img src="images/docinstagram.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                            <a href="#">
-                                <img src="images/docfacebook.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                            <a href="#">
-                                <img src="images/doctwitter.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                            <a href="#">
-                                <img src="images/docwhatsapp.png" alt="" class="contact-links__link" height="35" width="35">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="fifth-slider-controls">
-                    <button class="fifth-slider-controls__previous-button">&#8249;</button>
-                    <button class="fifth-slider-controls__next-button">&#8250;</button>
                 </div>
             </div>
 
@@ -347,44 +335,42 @@
                         </p>
                     </div>
                 </div>
-                <div class="cards seventh-cards seventh-slider">
-                    <div class="cards__card seventh-cards__seventh-card seventh-slider__slide border-enable-style show">
-                        <img src="images/med1.png" loading="lazy" class="doctor-card-image">
-                        <div class="seventh-text-block fade-in">
-                            <h2 class="seventh-text-block__seventh-card-title">As a veterinarian and lovers of animals</h2>
-                            <a href="#" class="seventh-text-block__calendar">FEBRUARY 09.2020</a>
-                            <p class="seventh-text-block__seventh-card-text">
-                                Lorem ipsum available, but the majority have suffered alteration in some words which look.
-                            </p>
-                            <a href="#" class="seventh-text-block__info-link">Read More +</a>
+                <div class="cards seventh-cards seventh-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="cards__card seventh-cards__seventh-card seventh-slider__slide border-enable-style swiper-slide">
+                            <img src="images/med1.png" loading="lazy" class="doctor-card-image">
+                            <div class="seventh-text-block fade-in">
+                                <h2 class="seventh-text-block__seventh-card-title">As a veterinarian and lovers of animals</h2>
+                                <a href="#" class="seventh-text-block__calendar">FEBRUARY 09.2020</a>
+                                <p class="seventh-text-block__seventh-card-text">
+                                    Lorem ipsum available, but the majority have suffered alteration in some words which look.
+                                </p>
+                                <a href="#" class="seventh-text-block__info-link">Read More +</a>
+                            </div>
+                        </div>
+                        <div class="cards__card seventh-cards__seventh-card seventh-slider__slide swiper-slide">
+                            <img src="images/med2.png" loading="lazy" class="doctor-card-image">
+                            <div class="seventh-text-block fade-in">
+                                <h2 class="seventh-text-block__seventh-card-title">As a veterinarian and lovers of animals</h2>
+                                <a href="#" class="seventh-text-block__calendar">FEBRUARY 09.2020</a>
+                                <p class="seventh-text-block__seventh-card-text">
+                                    Lorem ipsum available, but the majority have suffered alteration in some words which look.
+                                </p>
+                                <a href="#" class="seventh-text-block__info-link">Read More +</a>
+                            </div>
+                        </div>
+                        <div class="cards__card seventh-cards__seventh-card seventh-slider__slide border-enable-style swiper-slide">
+                            <img src="images/med3.png" loading="lazy" class="doctor-card-image">
+                            <div class="seventh-text-block fade-in">
+                                <h2 class="seventh-text-block__seventh-card-title">As a veterinarian and lovers of animals</h2>
+                                <a href="#" class="seventh-text-block__calendar">FEBRUARY 09.2020</a>
+                                <p class="seventh-text-block__seventh-card-text">
+                                    Lorem ipsum available, but the majority have suffered alteration in some words which look.
+                                </p>
+                                <a href="#" class="seventh-text-block__info-link">Read More +</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="cards__card seventh-cards__seventh-card seventh-slider__slide">
-                        <img src="images/med2.png" loading="lazy" class="doctor-card-image">
-                        <div class="seventh-text-block fade-in">
-                            <h2 class="seventh-text-block__seventh-card-title">As a veterinarian and lovers of animals</h2>
-                            <a href="#" class="seventh-text-block__calendar">FEBRUARY 09.2020</a>
-                            <p class="seventh-text-block__seventh-card-text">
-                                Lorem ipsum available, but the majority have suffered alteration in some words which look.
-                            </p>
-                            <a href="#" class="seventh-text-block__info-link">Read More +</a>
-                        </div>
-                    </div>
-                    <div class="cards__card seventh-cards__seventh-card seventh-slider__slide border-enable-style">
-                        <img src="images/med3.png" loading="lazy" class="doctor-card-image">
-                        <div class="seventh-text-block fade-in">
-                            <h2 class="seventh-text-block__seventh-card-title">As a veterinarian and lovers of animals</h2>
-                            <a href="#" class="seventh-text-block__calendar">FEBRUARY 09.2020</a>
-                            <p class="seventh-text-block__seventh-card-text">
-                                Lorem ipsum available, but the majority have suffered alteration in some words which look.
-                            </p>
-                            <a href="#" class="seventh-text-block__info-link">Read More +</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="seventh-slider-controls">
-                    <button class="seventh-slider-controls__previous-button">&#8249;</button>
-                    <button class="seventh-slider-controls__next-button">&#8250;</button>
                 </div>
             </div>
         </section>
@@ -491,12 +477,10 @@
         </div>
     </footer>
     <!--Scripts-------------------------------------------------------------------------------------------------------->
-    <script>
-        let mySwiper = new Swiper('.cards', {})
-    </script>
-    <script src="blocks/main/main.js" defer></script>
+    <script src="styles/unpkg.com_swiper@8.4.7_swiper-bundle.min.js"></script>
+    <script src="styles/slider.js"></script>
     <script src="styles/animations.js" defer></script>
-    <!--<script src="blocks/main/slider.js" async></script>-->
+    <script src="blocks/main/main.js" defer></script>
     <script src="blocks/header/header.js" async></script>
     <script src="blocks/footer/footer.js" async></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
