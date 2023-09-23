@@ -1,9 +1,7 @@
 var swiper = new Swiper(".swiper", {
     spaceBetween: 20,
     loop: true,
-    simulateTouch: true,
-    grabCursor: true,
-    touchRatio: 1,
+    direction: 'horizontal',
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -18,4 +16,13 @@ var swiper = new Swiper(".swiper", {
             slidesPerView: 3,
         },
     },
+    autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+    },
+    lazy: {
+        loadPrevNext: false,
+        loadOnTransitionStart: false,
+    }
 });
