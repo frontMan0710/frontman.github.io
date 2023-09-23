@@ -16,11 +16,6 @@ var swiper = new Swiper(".swiper", {
             slidesPerView: 3,
         },
     },
-    autoplay: {
-        delay: 5000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
-    },
     lazy: {
         loadPrevNext: false,
         loadOnTransitionStart: false,
